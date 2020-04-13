@@ -1,0 +1,13 @@
+
+<!--When selectedHuman is undefined, the ngIf removes the human detail from the DOM.
+There are no selectedHuman bindings to consider. When the user picks a human,
+ selectedHuman has a value and ngIf puts the human detail into the DOM.-->
+<div *ngIf="human">
+  <h2>{{human.name | uppercase}} Details</h2>
+  <div><span>age: </span>{{human.age}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="human.name" placeholder="name"/>
+    </label>
+  </div>
+</div>

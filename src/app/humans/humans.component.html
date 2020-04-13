@@ -1,0 +1,20 @@
+<!--<h3>{{human.name | uppercase}} start learn TypeScript!</h3>
+ The word uppercase in the interpolation binding, right after the pipe operator ( | ),
+activates the built-in UppercasePipe. Pipes are a good way to format strings, currency amounts,
+dates and other display data. Angular ships with several built-in pipes and you can create your own.-->
+<div>
+<!--<label>name:
+     <input [(ngModel)]="human.name" placeholder="name"/> //two-way data binding with the ngModel directive
+  </label>-->
+  <h2>List of my HUMANS:</h2>
+  <ul class="humans">
+    <li *ngFor="let human of humans"
+        [class.selected]="human === selectedHuman"
+        (click)="onSelect(human)">
+      <span class="badge">{{human.id}}</span> {{human.name}}
+    </li>
+  </ul>
+  <app-human-details [human]="selectedHuman"></app-human-details>
+</div>
+
+
