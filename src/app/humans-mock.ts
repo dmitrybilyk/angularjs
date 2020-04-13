@@ -10,5 +10,6 @@ export const HUMANS: Human[] = [
   { id: 7, age: 27, name: 'Dynama' },
   { id: 8, age: 41, name: 'Dr IQ' },
   { id: 9, age: 19, name: 'Magma' },
-  { id: 10, age: 29, name: 'Tornado' }
+  { id: 10, age: 29, name: 'Tornado' },
+  { id: 11, age: 29, name: 'Kharkiv' }
 ];
