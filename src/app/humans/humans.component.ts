@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Human } from '../human';
-import { HUMANS } from '../humans-mock';
+import { HumanService} from "../human.service";
+import { MessageService} from "../message.service";
+
 
 @Component({
   selector: 'app-humans',
@@ -9,21 +11,30 @@ import { HUMANS } from '../humans-mock';
   /*Styles and stylesheets identified in @Component metadata are scoped to that specific component.*/
 })
 export class HumansComponent implements OnInit {
-  // human: Human = {
-  //   id: 1,
-  // age: 33,
-  // name: 'Lena'
-//}
+  /*human: Human = {
+    id: 1,
+    age: 33,
+    name: 'Lena'
+  }*/
 
-  humans = HUMANS;
+  humans: Human[];
   selectedHuman: Human;
-  onSelect( human: Human): void {
-    this.selectedHuman = human;
-  }
 
-  constructor() { }
+
+  constructor(private humanService: HumanService, private messageService: MessageService){}
+
 
   ngOnInit(): void {
+    this.getHumans();
   }
-
+  onSelect( human: Human): void {
+    this.selectedHuman = human;
+    this.messageService.add(`Selected human has name=${human.name}`);
+  }
+ /* getHumans(): void {
+    this.humans = this.humanService.getHumans();
+  }*/
+  getHumans(): void {
+    this.humanService.getHumans().subscribe(humans => this.humans = humans);
+  }
 }
