@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'] // the location of the component's private CSS styles.
 })
 export class AppComponent {
-  title = 'First-angular-app from Lena and Dima';
+  title = 'my-dream-app';
 }
 /* The ngOnInit() is a lifecycle hook. Angular calls ngOnInit() shortly after creating a component.
  It's a good place to put initialization logic.

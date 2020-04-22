@@ -1,0 +1,13 @@
+<h3>Top Humans</h3>
+<div class="grid grid-pad">
+  <!--You're using Angular interpolation binding within
+  the *ngFor repeater to insert the current iteration's human.id
+  into each routerLink.-->
+  <a *ngFor="let human of humans" class="col-1-4"
+    routerLink="/detail/{{human.id}}">
+    <div class="module humans">
+      <h4>{{human.name}}</h4>
+    </div>
+  </a>
+</div>
+<app-human-search></app-human-search>

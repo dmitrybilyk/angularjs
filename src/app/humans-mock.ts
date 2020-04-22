@@ -1,6 +1,6 @@
 import { Human } from './human';
 
-export const HUMANS: Human[] = [
+/*export const HUMANS: Human[] = [
   { id: 1, age: 22, name: 'Dr Nice' },
   { id: 2, age: 31, name: 'Narco' },
   { id: 3, age: 32, name: 'Bombasto' },
@@ -12,4 +12,4 @@ export const HUMANS: Human[] = [
   { id: 9, age: 19, name: 'Magma' },
   { id: 10, age: 29, name: 'Tornado' },
   { id: 11, age: 29, name: 'Kharkiv' }
-];
+];*/
