@@ -1,5 +1,7 @@
 /*private CSS styles for this component, pointed to it in @Component.styleUrls*/
-
+.warning {
+  color: red;
+}
 .humans {
   margin: 0 0 2em 0;
   list-style-type: none;

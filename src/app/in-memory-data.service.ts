@@ -17,8 +17,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 7, age: 27, name: 'Dima' },
       { id: 8, age: 41, name: 'Mila' },
       { id: 9, age: 19, name: 'Sam' },
-      { id: 10, age: 29, name: 'Tim' },
-      { id: 11, age: 29, name: 'Kot' }
+      { id: 10, age: 29, name: 'Tim' }
     ];
     return {humans};
   }
@@ -28,7 +27,7 @@ export class InMemoryDataService implements InMemoryDbService {
   // the method below returns the initial number (11).
   // if the humans array is not empty, the method below returns the highest
   // human id + 1.
-  genId(humans: Human[]): number {
-    return humans.length > 0 ? Math.max(...humans.map(human => human.id)) + 1 : 11;
-  }
+  // genId(humans: Human[]): number {
+  //   return humans.length > 0 ? Math.max(...humans.map(human => human.id)) + 1 : 11;
+  // }
 }

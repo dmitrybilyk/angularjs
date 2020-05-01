@@ -6,6 +6,7 @@ dates and other display data. Angular ships with several built-in pipes and you 
 <!--<label>name:
      <input [(ngModel)]="human.name" placeholder="name"/> //two-way data binding with the ngModel directive
   </label>-->
+
 <h2>List of my HUMANS:</h2>
 <div>
   <label>Human name:
@@ -16,7 +17,7 @@ dates and other display data. Angular ships with several built-in pipes and you 
     add
   </button>
 </div>
-<p *ngIf="humans.length > 10">Oops!.. There are more then 10 humans!</p>
+<p class="warning" *ngIf="humans.length > 10">Oops!.. There are more then 10 humans!</p>
 <ul class="humans">
   <li *ngFor="let human of humans">
     <!--
