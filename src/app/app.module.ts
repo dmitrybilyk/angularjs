@@ -14,6 +14,7 @@ import { HttpClientModule }    from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { HumanSearchComponent } from './human-search/human-search.component';
+import { SomeComponent } from './some/some.component';
 
 
 
@@ -24,7 +25,8 @@ import { HumanSearchComponent } from './human-search/human-search.component';
     HumanDetailsComponent,
     MessagesComponent,
     DashboardComponent,
-    HumanSearchComponent
+    HumanSearchComponent,
+    SomeComponent
   ],
   imports: [
     HttpClientModule,

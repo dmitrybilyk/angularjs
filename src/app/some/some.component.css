@@ -1,0 +1,21 @@
+div {
+  padding: .25rem 0;
+}
+h1, h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+hr {
+  color: #3fdcb1;
+}
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
